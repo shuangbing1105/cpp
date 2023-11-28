@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace std;
+int big, small,total;
+int main()
+{
+    cout << "消費人數(大人)";
+	cin >> big;
+	cout << "消費人數(小孩)";
+	cin >> small;
+	total = big * 250 + small * 150;
+	if (total >= 1000)
+	{
+		cout << "消費金額是" << total * 0.9 << "元";
+	}
+	else
+	{
+		cout << "消費金額是" << total << "元";
+	}
+}
