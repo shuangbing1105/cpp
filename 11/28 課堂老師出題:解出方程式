@@ -1,0 +1,25 @@
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	cout << "方程式ax^2+bx+c=0:\n";
+	cin >> a>> b>> c;
+	if ((pow(b, 2) - 4 * a*c) < 0)
+	{
+		cout << "無實數解";
+	}
+	else if ((pow(b, 2) - 4 * a*c) == 0)
+	{
+
+		cout << "只有一個解，x=" << -b / (2 * a);
+	}
+	else
+	{
+		cout << "有兩個解，x1=" << -b + sqrt(pow(b, 2) - 4 * a*c) / 2 * a << "x2=" << -b - sqrt(pow(b, 2) - 4 * a*c) / 2 * a;
+	}
+	return 0;
+}
