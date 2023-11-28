@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	float money, a;
+
+	cout << "本金：";
+	cin >> money;
+	cout << "請輸入年利率(%):";
+	cin >> a;
+
+	for (int i = 1; i < 4; i++) {
+		cout << "第" << i << "年的本利和：" << money * pow((1 + (a / 100)), i) << endl;
+	}
+
+	return 0;
+}
